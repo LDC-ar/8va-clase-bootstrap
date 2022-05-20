@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Leandro Castagno - Tarea 8 - Bootstrap</title>
+</head>
+<body>
+    <header class="container-fluid border-bottom border-4 border-white">
+        <!------------- NAVBAR ------------->
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg pb-2">
+            <div class="container">
+                <a class="navbar-brand fs-4" href="#">Google</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#testimonials">Testimonials</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!------------- CAROUSEL ------------->
+        <div class="container col-9 py-5" id="gallery">
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/image-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/image-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/image-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!------------- TESTIMONIALS ------------->
+        <div class="container h-100 pt-5 pb-4 d-flex justify-content-center align-items-center" id="testimonials">
+            <div class="row">
+                <!-- Columna izquierda -->
+                <div class="col-12 col-lg-9">
+                    <div class="row">
+                        <!-- CARD Celeste -->
+                        <div class="col-12 col-lg-8 p-3">
+                            <article class="card h-100 bg-primary shadow text-white">
+                                <div class="card-body p-4">
+                                    <div class="d-flex mb-3">
+                                        <img src="./images/image-daniel.jpg" alt="Daniel"
+                                            class="img-thumbnail rounded-circle">
+                                        <div class="ps-4 d-flex flex-column justify-content-center">
+                                            <h5 class="card-title">Daniel Calamardo</h5>
+                                            <p class="card-text">Fullstack Dev</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="pt-4 fs-4 justify">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Aliquam possimus dolorum alias totam fugiat numquam omnis natus
+                                            praesentium, nostrum nulla deserunt modi est quaerat.</h6>
+                                        <blockquote class="blockquote pt-4 fs-6">
+                                            “ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+                                            praesentium ipsam porro ullam laboriosam? Error libero fuga tempora,
+                                            ratione, necessitatibus dignissimos cumque nisi est velit, accusamus ducimus
+                                            saepe fugit officia eum quas culpa architecto ea quod incidunt. Deserunt,
+                                            dolor quasi? ”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- CARD Gris -->
+                        <div class="col-12 col-lg-4 p-3">
+                            <article class="card h-100 bg-secondary shadow text-white">
+                                <div class="card-body p-4">
+                                    <div class="d-flex mb-3">
+                                        <img src="./images/image-jonathan.jpg" alt="jonathan"
+                                            class="img-thumbnail rounded-circle">
+                                        <div class="ps-4 d-flex flex-column justify-content-center">
+                                            <h5 class="card-title">Jonathan Gallegos</h5>
+                                            <p class="card-text">Community Manager</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="pt-4 fs-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </h6>
+                                        <blockquote class="blockquote pt-4 fs-6">
+                                            “ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, sed
+                                            expedita aliquam accusantium assumenda in nihil excepturi perspiciatis
+                                            beatae dolore. ”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- CARD Blanca -->
+                        <div class="col-12 col-lg-4 p-3">
+                            <article class="card h-100 bg-light shadow">
+                                <div class="card-body p-4">
+                                    <div class="d-flex mb-3">
+                                        <img src="./images/image-Jaqueline.jpg" alt="jeanette"
+                                            class="img-thumbnail rounded-circle">
+                                        <div class="ps-4 d-flex flex-column justify-content-center">
+                                            <h5 class="card-title">Jaqueline Suarez</h5>
+                                            <p class="card-text">Project Manager</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="pt-4 fs-4">Lorem ipsum dolor sit amet consectetur.</h6>
+                                        <blockquote class="blockquote pt-4 fs-6">
+                                            “ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+                                            aspernatur veritatis consequatur ab maxime, autem dicta quod sapiente. ”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- CARD Celeste -->
+                        <div class="col-12 col-lg-8 p-3">
+                            <article class="card h-100 bg-primary shadow text-white">
+                                <div class="card-body p-4">
+                                    <div class="d-flex mb-3">
+                                        <img src="./images/image-Patricio.jpg" alt="Patrick"
+                                            class="img-thumbnail rounded-circle">
+                                        <div class="ps-4 d-flex flex-column justify-content-center">
+                                            <h5 class="card-title"> Patricio Ramirez</h5>
+                                            <p class="card-text">Marketing Digital</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="pt-4 fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Tempora cupiditate, rem suscipit quasi officiis voluptatum excepturi dolores
+                                            omnis.</h6>
+                                        <blockquote class="blockquote pt-4 fs-6">
+                                            “ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                                            veniam, exercitationem, nihil tenetur excepturi quam quae et atque vero
+                                            molestiae obcaecati ex dicta ab deserunt culpa voluptates adipisci quod
+                                            unde”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- Columna derecha -->
+                <!-- CARD Blanca -->
+                <div class="col-12 col-lg-3 p-3">
+                    <aside class="card h-100 bg-light shadow">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <img src="./images/image-Nadia.jpg" alt="Kira" class="img-thumbnail rounded-circle">
+                                <div class="ps-4 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">Nadia Gomez</h5>
+                                    <p class="card-text">Fullstack Dev</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="pt-4 fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                                    dolores.</h6>
+                                <blockquote class="blockquote pt-4 fs-6">
+                                    “ Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, id. Nobis harum
+                                    hic aut non ab iste, ducimus commodi itaque deserunt quod similique dolorem
+                                    molestiae nemo laboriosam natus quibusdam ex pariatur praesentium, quae veniam ipsam
+                                    rem perferendis! Velit saepe corporis quae blanditiis eligendi sapiente quasi
+                                    maiores soluta doloremque atque incidunt, asperiores dolore, mollitia repudiandae
+                                    praesentium quia expedita. Ipsa voluptatibus voluptates dolore qui? Eligendi ratione
+                                    suscipit sapiente repudiandae, adipisci, doloremque nulla voluptatem rem ex
+                                    accusamus mollitia odit reiciendis qui praesentium commodi. ”
+                                </blockquote>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        </main>
+        <!------------- FOOTER ------------->
+        <footer class="container-fluid">
+            <div class="text-center">
+                <p>Tarea Clase 8 - Bootstrap . Coded by <a href="https://github.com/LDC-ar">Leandro Castagno</a>.</p>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
